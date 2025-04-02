@@ -64,8 +64,15 @@ export class DddCardList extends DDDPulseEffectSuper(I18NMixin(DDD)) {
         .title-bar {
           padding: var(--ddd-spacing-2);
           font-weight: bold;
+        }
+        div ::slotted(*) {
+          display: inline-block;
+        }
         h3 span {
-          font-size: var( --ddd-card-list-label-font-size, var(--ddd-font-size-s));
+          font-size: var(
+            --ddd-card-list-label-font-size,
+            var(--ddd-font-size-s)
+          );
           border-bottom: var(--ddd-spacing-1) solid var(--ddd-theme-primary);
         }
         .ddd-wrapper {
@@ -77,6 +84,20 @@ export class DddCardList extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           border: 1px solid var(--ddd-theme-primary);
           border-radius: 10px;
           background-color: var(--ddd-theme-accent);
+        }
+        button {
+          background-color: --ddd-theme-default-beaverBlue; /* Penn State blue */
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       `,
     ];
