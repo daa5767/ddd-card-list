@@ -52,10 +52,11 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           border: 1px solid var(--ddd-border-color, #ccc);
           border-radius: var(--ddd-border-radius, 12px);
           padding: 0px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-          max-width: 300px;
+          width: 400px;
+          font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Open Sans", "Helvetica Neue", sans-serif;
+          /* padding: 10px; */
+          /* max-width: 300px;
           text-align: left;
           --component-color: var(
             --ddd-theme-primary,
@@ -68,7 +69,7 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
               --ddd-theme-accent,
               var(--ddd-theme-bgContrast, var(--ddd-theme-default-white))
             )
-          );
+          ); */
         }
 
         img {
@@ -87,9 +88,11 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
         .title-bar {
           text-align: left;
           padding-left: 10px;
-          color: var(--ddd-theme-default-nittanyNavy) solid;
+          margin-top: 10px;
+          color: var(--ddd-theme-default-nittanyNavy);
           border: none;
           font-weight: bold;
+          font-size: 28px;
         }
 
         .image-container {
@@ -129,8 +132,7 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           padding: 10px; /* Adjust spacing */
         }
         button {
-          width: 90%;
-          max-width: 200px;
+          width: 100%;
           background-color: #004684;
           color: white;
           border: none;
@@ -140,6 +142,12 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           border-radius: 5px;
           cursor: pointer;
           transition: background-color 0.3s ease-in-out;
+          margin-bottom: 15px;
+        }
+        .description {
+          padding: 10px;
+          height: 125px;
+          color: var(--ddd-theme-default-coalyGray);
         }
         .ddd-wrapper {
           display: flex;
