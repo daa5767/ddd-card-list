@@ -63,7 +63,7 @@ export class DddCardList extends DDDPulseEffectSuper(I18NMixin(DDD)) {
         }
         .title-bar {
           padding: var(--ddd-spacing-2);
-          font-weight: bold;
+          font-weight: var(--ddd-font-weight-bold);
         }
         div ::slotted(*) {
           display: inline-block;
@@ -80,9 +80,9 @@ export class DddCardList extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          padding: 5px;
+          padding: var(--ddd-spacing-2);
           border: 1px solid var(--ddd-theme-primary);
-          border-radius: 10px;
+          border-radius: var(--ddd-radius-md);
           background-color: var(--ddd-theme-accent);
         }
       `,

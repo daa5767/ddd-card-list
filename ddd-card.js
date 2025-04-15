@@ -51,8 +51,8 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           display: block;
           border: 1px solid var(--ddd-border-color, #ccc);
           border-radius: var(--ddd-border-radius, 12px);
-          padding: 0px;
-          margin: 12px;
+          padding: var(--ddd-spacing-0);
+          margin: var(--ddd-spacing-3);
           width: 400px;
           font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
             "Ubuntu", "Open Sans", "Helvetica Neue", sans-serif;
@@ -66,18 +66,18 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
         .wrapper {
           display: flex;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: var(--ddd-spacing-3);
           margin: var(--ddd-spacing-2);
           padding: var(--ddd-spacing-4);
         }
 
         .title-bar {
           text-align: left;
-          padding-left: 10px;
-          margin-top: 10px;
+          padding-left: var(--ddd-spacing-3);
+          margin-top: var(--ddd-spacing-3);
           color: var(--ddd-theme-default-nittanyNavy);
           border: none;
-          font-weight: bold;
+          font-weight: var(--ddd-font-weight-bold);
           font-size: 28px;
         }
 
@@ -94,14 +94,14 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           margin-top: var(--ddd-spacing-2);
         }
         .link a {
-          color: white;
+          color: var(--ddd-theme-default-white);
           text-decoration: underline;
           font-size: var(--ddd-font-size-xs);
           background-color: var(--ddd-theme-primary);
         }
 
         a {
-          background-color: white;
+          background-color: var(--ddd-theme-default-white);
         }
 
         h3 span {
@@ -124,12 +124,12 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           color: white;
           border: none;
           padding: 12px 20px;
-          font-size: 16px;
+          font-size: var(--ddd-font-size-4xs);
           font-weight: bold;
-          border-radius: 5px;
+          border-radius: var(--ddd-radius-sm);
           cursor: pointer;
           transition: background-color 0.3s ease-in-out;
-          margin-bottom: 15px;
+          margin-bottom: var(--ddd-spacing-4);
         }
         button:hover {
           background-color: var(--ddd-theme-default-nittanyNavy);
@@ -147,9 +147,9 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          padding: 10px;
+          padding: var(--ddd-spacing-3);
           border: 1px solid var(--ddd-theme-primary);
-          border-radius: 10px;
+          border-radius: var(--ddd-radius-md);
           background-color: var(--ddd-theme-accent);
         }
       `,
