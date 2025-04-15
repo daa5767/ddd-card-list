@@ -52,24 +52,10 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
           border: 1px solid var(--ddd-border-color, #ccc);
           border-radius: var(--ddd-border-radius, 12px);
           padding: 0px;
+          margin: 12px;
           width: 400px;
           font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
             "Ubuntu", "Open Sans", "Helvetica Neue", sans-serif;
-          /* padding: 10px; */
-          /* max-width: 300px;
-          text-align: left;
-          --component-color: var(
-            --ddd-theme-primary,
-            var(--ddd-theme-default-link)
-          );
-          --component-border-color: var(--component-color);
-          --component-background-color: var(
-            --lowContrast-override,
-            var(
-              --ddd-theme-accent,
-              var(--ddd-theme-bgContrast, var(--ddd-theme-default-white))
-            )
-          ); */
         }
 
         img {
@@ -80,7 +66,7 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
         .wrapper {
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 10px;
           margin: var(--ddd-spacing-2);
           padding: var(--ddd-spacing-4);
         }
@@ -151,9 +137,9 @@ export class DddCard extends DDDPulseEffectSuper(I18NMixin(DDD)) {
         }
 
         .description {
-          padding: 5px;
-          height: 125px;
+          font-size: var(--ddd-font-size-3xs);
           color: var(--ddd-theme-default-coalyGray);
+          margin: var(--ddd-spacing-3);
           text-align: left;
         }
         .ddd-wrapper {
